@@ -3,15 +3,57 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 73;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		022E87DE2CCC5459004C7554 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022E87D92CCC5459004C7554 /* AVFoundation.framework */; };
+		022E87DF2CCC5459004C7554 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022E87DA2CCC5459004C7554 /* Accelerate.framework */; };
+		022E87E02CCC5459004C7554 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022E87DB2CCC5459004C7554 /* AudioToolbox.framework */; };
+		022E87E12CCC5459004C7554 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022E87DC2CCC5459004C7554 /* CoreMIDI.framework */; };
+		022E87E22CCC5459004C7554 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022E87DD2CCC5459004C7554 /* CoreAudio.framework */; };
+		02E88B112CCCEA4F001027EF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 02E88B102CCCEA4F001027EF /* .gitignore */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		022E87A02CCC4747004C7554 /* juceStaticLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = juceStaticLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		022E87D92CCC5459004C7554 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		022E87DA2CCC5459004C7554 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		022E87DB2CCC5459004C7554 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		022E87DC2CCC5459004C7554 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		022E87DD2CCC5459004C7554 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		02E88B102CCCEA4F001027EF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		022E87F62CCC5B8E004C7554 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 022E879F2CCC4747004C7554 /* juceStaticLibrary */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		022E87EF2CCC5659004C7554 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 022E879C2CCC4747004C7554 /* Sources */;
+			membershipExceptions = (
+				Native/Cpp/AudioPlayer.hpp,
+			);
+		};
+		022E87F32CCC5694004C7554 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 022E879E2CCC4747004C7554 /* Resources */;
+			membershipExceptions = (
+				Native/Cpp/AudioPlayer.cpp,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		022E87A22CCC4747004C7554 /* juceStaticLibrary */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = juceStaticLibrary; sourceTree = "<group>"; };
+		022E87A22CCC4747004C7554 /* juceStaticLibrary */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (022E87F62CCC5B8E004C7554 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 022E87EF2CCC5659004C7554 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, 022E87F32CCC5694004C7554 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = juceStaticLibrary; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -19,6 +61,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				022E87DE2CCC5459004C7554 /* AVFoundation.framework in Frameworks */,
+				022E87DF2CCC5459004C7554 /* Accelerate.framework in Frameworks */,
+				022E87E02CCC5459004C7554 /* AudioToolbox.framework in Frameworks */,
+				022E87E12CCC5459004C7554 /* CoreMIDI.framework in Frameworks */,
+				022E87E22CCC5459004C7554 /* CoreAudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -28,8 +75,10 @@
 		022E87972CCC4747004C7554 = {
 			isa = PBXGroup;
 			children = (
+				02E88B102CCCEA4F001027EF /* .gitignore */,
 				022E87A22CCC4747004C7554 /* juceStaticLibrary */,
 				022E87A12CCC4747004C7554 /* Products */,
+				022E87D82CCC53D5004C7554 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,6 +88,18 @@
 				022E87A02CCC4747004C7554 /* juceStaticLibrary.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		022E87D82CCC53D5004C7554 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				022E87DA2CCC5459004C7554 /* Accelerate.framework */,
+				022E87DB2CCC5459004C7554 /* AudioToolbox.framework */,
+				022E87D92CCC5459004C7554 /* AVFoundation.framework */,
+				022E87DD2CCC5459004C7554 /* CoreAudio.framework */,
+				022E87DC2CCC5459004C7554 /* CoreMIDI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,11 +139,11 @@
 				TargetAttributes = {
 					022E879F2CCC4747004C7554 = {
 						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
 					};
 				};
 			};
 			buildConfigurationList = 022E879B2CCC4747004C7554 /* Build configuration list for PBXProject "juceStaticLibrary" */;
-			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -90,6 +151,7 @@
 				Base,
 			);
 			mainGroup = 022E87972CCC4747004C7554;
+			preferredProjectObjectVersion = 60;
 			productRefGroup = 022E87A12CCC4747004C7554 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -104,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E88B112CCCEA4F001027EF /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +190,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -172,6 +235,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					$HOME/JUCE/modules,
+					$SRCROOT/juceStaticLibrary/Native/Cpp/Juce,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -190,7 +257,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -229,6 +296,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					$HOME/JUCE/modules,
+					$SRCROOT/juceStaticLibrary/Native/Cpp/Juce,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -244,25 +315,34 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"juceStaticLibrary/Preview Content\"";
 				DEVELOPMENT_TEAM = U2G8C755H7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = juceStaticLibrary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/juceStaticLibrary/Native/Cpp/Juce",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = char.juceStaticLibrary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.char.juceStaticLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "juceStaticLibrary/juceStaticLibrary-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,25 +353,37 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"juceStaticLibrary/Preview Content\"";
 				DEVELOPMENT_TEAM = U2G8C755H7;
 				ENABLE_PREVIEWS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"_NDEBUG=1",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = juceStaticLibrary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/juceStaticLibrary/Native/Cpp/Juce",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = char.juceStaticLibrary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.char.juceStaticLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "juceStaticLibrary/juceStaticLibrary-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
